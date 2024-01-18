@@ -1,0 +1,675 @@
+$lightGreen: #b9e7e7;
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+    //LOGIN & REGISTER
+
+    .auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $lightGreen;
+
+      h1 {
+        font-size: 20px;
+        color: teal;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-color: white;
+        width: 300px;
+        gap: 20px;
+
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+
+        button {
+          padding: 10px;
+          border: none;
+          background-color: teal;
+          cursor: pointer;
+          color: white;
+        }
+
+        p {
+          font-size: 12px;
+          color: red;
+          text-align: center;
+        }
+
+        span {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+
+    //NAVBAR
+
+    .navbar{
+        z-index: 99;
+        background-color: rgb(120, 120, 69);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-content: end;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+         
+          .links{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              
+
+              .user{
+                text-decoration: none;
+                color: #333;
+              }
+              .dashboard{
+                background-color: rgb(47, 47, 18);
+                width: 100px;
+                height: 40px;
+                border-radius: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 300;
+                
+                
+              
+
+                &:hover{
+                    background-color: rgb(120, 120, 69);
+                    border: 2px solid rgb(47, 47, 18);
+
+                }
+                
+                
+              }
+              .dashboard a {
+                text-decoration: none;
+                color: #333;
+                color: whitesmoke;
+
+                &:hover{
+                  color: rgb(178, 224, 29);
+                  
+              }
+              }
+              
+
+              h6{
+                  font-size: 16px;
+                  font-weight: 300;
+              }
+              span{
+                  cursor: pointer;
+              }
+
+             
+          }
+      
+  }
+
+    //FOOTER
+
+    footer {
+      position: fixed;
+      z-index: 9;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: rgb(41, 41, 30);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    
+      h4 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        width: 50px;
+        margin-right: 5px;
+      }
+    }
+
+    //  SIMPAN
+    .simpan{
+      padding-top:100px ;
+      text-align: center;
+      justify-content: center;
+      .posts{
+        
+        .post{
+          padding: 20px 50px 100px 50px;
+          .content{
+
+            .logo{
+              img{
+                border-radius: 50%;
+                width: 250px;
+                height: 250px;
+              }
+
+            }
+            .link{
+              h2{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+                font-weight: 1000;
+              }
+              h1{
+                font-family: 'Courier New', Courier, monospace;
+                margin-top: -20px;
+                color: white;
+                background-color: teal;
+                padding: 10px;
+                text-align: center;
+                font-size: 28px;
+                border: 2px solid teal;
+                border-radius: 50px;
+              }
+            }
+            .bor{
+              margin-top: -100px;
+              border: 1px solid #333;
+              border-radius: 50px;
+              padding: 40px 90px 25px 90px;
+              p h2{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+                font-weight: 600;
+              }
+              .waktu{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+              }
+              .create{
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+              }
+              .user{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+                float: right;
+              }
+            }
+            .delete{
+              background-color:  rgb(4, 63, 63);
+                width: 100px;
+                height: 40px;
+                border-radius: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 300;
+                cursor: pointer;
+                color: white;
+                margin-left: 450px;
+                margin-top: -20px;
+                &:hover{
+                    background-color: teal;
+                    border: 2px solid rgb(4, 63, 63);
+
+                }
+            }
+          }
+        }
+      }
+    }
+
+
+    //WRITE
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .buttonOFF{
+      box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+      border: 2px solid rgb(47, 47, 18);
+      padding: 5px 10px ;
+      border-radius:10px ;
+      color: whitesmoke;
+      
+
+      background-color: rgb(47, 47, 18);
+      width: 100px;
+      height: 40px;
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 300;
+      margin: auto;
+      cursor: pointer;
+      
+    
+
+      &:hover{
+        background-color: rgb(74, 74, 24);
+        border: 2px solid rgb(47, 47, 18);
+
+      }
+    }
+
+
+    .write{
+      background-color: rgb(206, 173, 130);
+      margin-top: 100px;
+      width: 400px;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .jam{
+      background-color: rgb(229, 201, 164);
+      box-shadow: rgba(0,0,0, 0.5) 0px 5px 15px;
+      margin-top: 20px; /* Tambahkan jarak di atas elemen .jam jika diperlukan */
+      padding: 50px 30px;
+      text-align: center;
+    }
+    
+    .text-jam{
+      background-color: rgb(229, 201, 164);
+      box-shadow: rgba(0,0,0, 0.5) 0px 5px 15px;
+      margin-top: 20px; /* Tambahkan jarak di atas elemen .text-jam jika diperlukan */
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+
+    .buttons{
+      margin-top: 50px;
+      margin-left: 140px;
+      display: flex;
+      justify-content: space-between;
+      
+
+      :first-child{
+        cursor: pointer;
+        color: teal;
+        background-color: white;
+        padding: 3px 5px;
+      }
+      :last-child{
+        cursor: pointer;
+        color: white;
+        background-color: rgb(41, 41, 30);
+        box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+        padding: 3px 5px;
+      }
+    }
+    .history{
+      position: absolute;
+      margin-top: -420px;
+      margin-left: 280px;
+      z-index: 999;;
+      text-decoration: none;
+      border: 2px solid rgb(47, 47, 18);
+      padding: 5px 10px ;
+      border-radius:10px ;
+      color: whitesmoke;
+      
+
+      background-color: rgb(47, 47, 18);
+      width: 100px;
+      height: 40px;
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 300;
+      
+      
+    
+
+      &:hover{
+        background-color: rgb(74, 74, 24);
+          border: 2px solid rgb(47, 47, 18);
+
+      }
+    }
+    
+
+
+ 
+
+  //UTAMA 
+
+    //HOME
+    .home{
+      text-align: center;
+    .homee {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+      .deskripsi {
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 70px;
+        margin-top: -200px;
+      }
+    }
+  }
+    
+    
+    .realTime {
+      border-radius: 15px;
+      position: relative;
+      margin-left: 40px; /* Tambahkan margin kiri untuk memberi jarak dengan deskripsi */
+      background-color: burlywood;
+    }
+    
+    .clock {
+      overflow: hidden;
+      text-align: center;
+      border: 2px solid burlywood;
+      width: 500px;
+      height: 150px;
+      margin: 30px 30px;
+      border-radius: 15px;
+      padding: 10px 0;
+      background-color: cornsilk;
+      box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+    }
+    
+    .clock h1 {
+      font-family: 'Courier New', Courier, monospace;
+      color: sandybrown;
+      font-size: 70px;
+      margin-top: 10px;
+    }
+    
+    .clock h6 {
+      font-family: 'Courier New', Courier, monospace;
+      float: right;
+      margin-right: 8px;
+      color: rgb(191, 153, 82);
+      margin-right: 20px;
+      margin-top: -100px;
+    }
+
+    .deskripsi h5 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      margin-top: -80px;
+    }
+    
+
+    //card FITUR
+    h1{
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 200px;
+      margin-bottom: 100px;
+      font-weight: 1000;
+    }
+    .fitur{
+      
+      box-sizing: border-box;
+      padding-top: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 10px;
+     padding-bottom: 200px;
+     
+   
+    
+      .fitur1{
+        margin-left: 100px;
+        margin-right: 5opx;
+        img{
+          width: 190px;
+          height: 100px;
+        }
+        p{
+          font-family: 'Courier New', Courier, monospace;
+          text-align: justify;
+         
+        }
+        h3{
+          font-family: 'Courier New', Courier, monospace;
+          padding-top: 30px;
+        }
+
+      }
+      .fitur2{
+        margin-left: 200px;
+        margin-right: 50px;
+        img{
+          width: 170px;
+          height: 100px;
+          margin-top: -3px;
+        }
+        p{
+          font-family: 'Courier New', Courier, monospace;
+          text-align: justify;
+        }
+        h3{
+          font-family: 'Courier New', Courier, monospace;
+          padding-top: 30px;
+        }
+      }
+      .fitur3{
+        margin-right: 100px;
+        margin-left: 150px;
+        img{
+        width: 170px;
+          height: 120px;
+          margin-bottom: -10px;
+        }
+        p{
+          font-family: 'Courier New', Courier, monospace;
+          text-align: justify;
+        }
+        h3{
+          font-family: 'Courier New', Courier, monospace;
+          padding-top: 20px;
+        }
+      }
+
+    }
+    
+
+    
+
+   
+
+    //SIMpan
+
+    .simpan {
+      display: flex;
+      gap: 50px;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 14px;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        .edit {
+          display: flex;
+          gap: 5px;
+
+          img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+
+        h1 {
+          font-size: 42px;
+          color: #333;
+        }
+
+        p {
+          text-align: justify;
+          line-height: 30px;
+        }
+      }
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        h1 {
+          font-size: 20px;
+          color: #555;
+        }
+
+        .post {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+
+          h2 {
+            color: #555;
+          }
+
+          button {
+            width: max-content;
+            padding: 7.5px 15px;
+            border: none;
+            cursor: pointer;
+            color: teal;
+            background-color: white;
+            border: 1px solid teal;
+
+            &:hover {
+              border: 1px solid white;
+              background-color: $lightGreen;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    
+
+    //WRITE
+
+    .add {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+          padding: 10px;
+          border: 1px solid lightgray;
+        }
+
+        .editorContainer {
+          height: 300px;
+          overflow: scroll;
+          border: 1px solid lightgray;
+
+          .editor {
+            height: 100%;
+            border: none;
+          }
+        }
+      }
+
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+         
+          padding-top: 7px;
+          flex:1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 12px;
+          color: #555;
+
+          .buttons{
+            display: flex;
+            justify-content: space-between;
+
+            :first-child{
+              cursor: pointer;
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+              padding: 3px 5px;
+            }
+            :last-child{
+              cursor: pointer;
+              color: white;
+              background-color: teal;
+              border: 1px solid teal;
+              padding: 3px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+
+
+
